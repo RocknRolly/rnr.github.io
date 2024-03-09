@@ -1,0 +1,109 @@
+    body{
+        background-color: black;
+        opacity: 0.9;
+        margin: 0;
+        
+        color: rgb(255, 245, 238);
+    }
+
+
+    /* Az egesz Header Alakitasa */
+    .header {
+        position: fixed;
+        display: flex;
+        font-family: helvetica;
+        font-size: 22px;
+        justify-content: space-between;
+        padding-right: 50px;
+        align-items: center;
+        width: 98%;
+        height: 69px;
+        background-color: black;
+        border-bottom   : 1px solid seashell;    
+    }
+
+    /* Logo beallitasa */
+
+    .logo {
+    opacity: 0.5;
+    padding-left: 10px;
+    }
+
+    /* Csak a menu Alakitasa */
+    .menu a{
+        color: rgb(255, 245, 238);
+        padding-left: 10px;
+    }
+
+    .menu a:hover{
+        color: rgb(255, 184, 134);
+    }
+
+
+    /* Kozep */
+
+    .kozep {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 69px;
+        margin:0px 20px 0px 20px;
+        height: 700px;
+        background-image: url(https://content.codecademy.com/courses/freelance-1/unit-4/img-mission-background.jpg?_gl=1*ddp3py*_ga*NTYyNzE5NDU4Mi4xNzA3OTQ5NTM4*_ga_3LRZM6TM9L*MTcwOTk3NTkxNy41Ni4xLjE3MDk5Nzk2NjUuMC4wLjA.);
+        background-repeat: no-repeat;
+        background-size: cover; 
+    }
+
+    .elvalaszto {
+        width: 100%;
+        height: 130px;
+        display: grid;
+        align-content: stretch;
+        align-items: center;
+        background-color: black;
+        
+    }
+
+    .elvalaszto h2, h4 {
+        text-align: center;
+    }
+
+/* Az also KV kepek  */
+.also {
+    display: flex;
+    flex-direction: column;
+    margin-left: 200px;
+    width: 1000px;
+    
+}
+
+.image-container {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 20px;
+}
+
+.image-wrapper {
+    text-align: center;
+}
+
+.also img {
+    width: 300px;
+    height: 200px;
+}
+
+.also h2,h4 {
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    margin: 0;
+}
+
+.also h2 {
+    margin-top: 20px;
+}
+
+.also h4 {
+
+    margin-bottom: 20px;
+}
