@@ -26,15 +26,19 @@
         padding: 20px;
         text-align: center;
       }
-      img {
-        width: 20%;
-        height: 20%;
+
+      .logo img {
+        width: 200px; /* Például 200px szélesség */
+        height: auto;
       }
     </style>
   </head>
   <body>
     <div class="logo">
-      <img src="https://hackerx.org/wp-content/uploads/2019/05/78-786385_apple-logo-png-apple-logo-transparent-background.jpg" alt="Logo" />
+      <img
+        src="https://hackerx.org/wp-content/uploads/2019/05/78-786385_apple-logo-png-apple-logo-transparent-background.jpg"
+        alt="Logo"
+      />
     </div>
 
     <div class="content">
@@ -45,12 +49,17 @@
     <script>
       // Várunk egy kicsit, majd animáljuk a logót
       setTimeout(function () {
-        document.querySelector(".logo").style.top = "20px";
-        document.querySelector(".logo").style.left = "20px";
-        document.querySelector(".logo").style.transform = "none"; // Transzformáció törlése
-        // Megjelenítjük a tartalmat
-        document.querySelector(".content").style.display = "block";
-      }, 2000); // 2000ms (2 másodperc) várakozás
+      // Logo méretének kicsinyítése
+      document.querySelector('.logo img').style.width = "100px"; // Például 100px szélesség
+    document.querySelector('.logo img').style.height = "auto"; // Automatikus magasság beállítása
+    // Logo pozíciójának beállítása a bal felső sarokba
+    document.querySelector('.logo').style.top = "20px";
+    document.querySelector('.logo').style.left = "20px";
+    document.querySelector('.logo').style.transform = "none"; // Transzformáció törlése
+    // Megjelenítjük a tartalmat
+    document.querySelector('.content').style.display = "block";
+  }, 2000); // 2000ms (2 másodperc) várakozás
+</script>
     </script>
   </body>
 </html>
