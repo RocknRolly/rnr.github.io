@@ -1,57 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Tea Cozy</title>
-</head>
-<body>
-    <div class="header">
-        <div class="logo">
-            <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-tea-cozy-logo.png?_gl=1*5q3yvf*_ga*NTYyNzE5NDU4Mi4xNzA3OTQ5NTM4*_ga_3LRZM6TM9L*MTcwOTk3NTkxNy41Ni4xLjE3MDk5Nzk2NjUuMC4wLjA." height="50px">
-        </div>
-        <div class="menu">
-            <a href="#">Mission</a>
-            <a href="#">Featured Tea</a>
-            <a href="#">Locations</a>
-        </div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Logo animáció</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: lightgray;
+      }
+
+      .logo {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: all 0.5s ease;
+        z-index: 1000;
+      }
+
+      .content {
+        display: none;
+        padding: 20px;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="logo">
+      <img src="1.jpeg" alt="Logo" />
     </div>
 
-    <div class="kozep">
-        <div class="elvalaszto">
-            <h2>Our Mission</h2>
-            <h4>Handpick , Artisanally Curated, Free Range, Sustainable, Small Batch, Fair Trade, Organic Tea<br></h4>
-        </div>
+    <div class="content">
+      <h1>Oldal tartalma</h1>
+      <p>Ez itt az oldal tartalma...</p>
     </div>
-    <div class="also">
-        <div class="text-content">
-            <h2>Tea of the Month</h2>
-            <h4>What's Steeping at The Tea Cozy?</h4>
-        </div>
-        <div class="image-container">
-            <div class="image-wrapper">
-                <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-berryblitz.jpg">
-                <p>Fall Berry Blitz Tea</p>
-            </div>
-            <div class="image-wrapper">
-                <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-spiced-rum.jpg">
-                <p>Spiced Rum Tea</p>
-            </div>
-            <div class="image-wrapper">
-                <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-donut.jpg">
-                <p>Seasonal Donuts</p>
-            </div>
-        </div>
-        <div class="image-container">
-            <div class="image-wrapper">
-                <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-myrtle-ave.jpg">
-                <p>Myrtle Ave Tea</p>
-            </div>
-            <div class="image-wrapper">
-                <img src="https://content.codecademy.com/courses/freelance-1/unit-4/img-bedford-bizarre.jpg">
-                <p>Bedfold Bizzare Tea</p>
-            </div>
-    </div>
-</body>2
+
+    <script>
+      // Várunk egy kicsit, majd animáljuk a logót
+      setTimeout(function () {
+        document.querySelector(".logo").style.top = "20px";
+        document.querySelector(".logo").style.left = "20px";
+        document.querySelector(".logo").style.transform = "none"; // Transzformáció törlése
+        // Megjelenítjük a tartalmat
+        document.querySelector(".content").style.display = "block";
+      }, 2000); // 2000ms (2 másodperc) várakozás
+    </script>
+  </body>
 </html>
