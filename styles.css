@@ -44,13 +44,13 @@ content {
   width: 98%;
   position: absolute;
   top: 50%;
-  border: 1px solid black;
+
   justify-content: center;
 }
 
 .kep-1 {
   margin: 5px;
-  border: 1px solid salmon;
+
 }
 
 .kep-1:hover {
