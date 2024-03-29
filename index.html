@@ -3,63 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Logo animáció</title>
-    <style>
-      body {
-        margin: 0;
-        padding: 0;
-        font-family: Arial, sans-serif;
-        background-color: lightgray;
-      }
-
-      .logo {
-        position: fixed;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        transition: all 0.5s ease;
-        z-index: 1000;
-      }
-
-      .content {
-        display: none;
-        padding: 20px;
-        text-align: center;
-      }
-
-      .logo img {
-        width: 200px; /* Például 200px szélesség */
-        height: auto;
-      }
-    </style>
+    <link rel="stylesheet" href="Style/style.css" />
+    <title>Amy Szekler</title>
   </head>
+
   <body>
-    <div class="logo">
-      <img
-        src="https://hackerx.org/wp-content/uploads/2019/05/78-786385_apple-logo-png-apple-logo-transparent-background.jpg"
-        alt="Logo"
-      />
-    </div>
+    <nav>
+      <div class="logo"><img src="Style/Logo/logo.png" alt="" /></div>
+      <div class="menu"><img src="Style/Logo/dia.png" alt="" /></div>
+    </nav>
 
-    <div class="content">
-      <h1>Oldal tartalma</h1>
-      <p>Ez itt az oldal tartalma...</p>
-    </div>
-
-    <script>
-      // Várunk egy kicsit, majd animáljuk a logót
-      setTimeout(function () {
-      // Logo méretének kicsinyítése
-      document.querySelector('.logo img').style.width = "100px"; // Például 100px szélesség
-    document.querySelector('.logo img').style.height = "auto"; // Automatikus magasság beállítása
-    // Logo pozíciójának beállítása a bal felső sarokba
-    document.querySelector('.logo').style.top = "20px";
-    document.querySelector('.logo').style.left = "20px";
-    document.querySelector('.logo').style.transform = "none"; // Transzformáció törlése
-    // Megjelenítjük a tartalmat
-    document.querySelector('.content').style.display = "block";
-  }, 2000); // 2000ms (2 másodperc) várakozás
-</script>
-    </script>
+    <content>
+      <div class="kep-1"><h1>Kedves Vendegek</h1></div>
+      <div class="kep-2"><p>Kedves Vendegek</p></div>
+    </content>
   </body>
 </html>
