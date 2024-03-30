@@ -12,7 +12,6 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
-  /* overflow: hidden; */
 }
 
 .navbar {
@@ -23,13 +22,13 @@ body {
   background-position: center;
   position: relative;
   width: auto;
-  height: 350px;
+  height: 250px;
 }
 
 .logo {
   position: absolute; /* Abszolút pozíció */
-  top: -230px;
-  left: 250px;
+  top: -200px;
+  left: 150px;
 }
 
 .logo img {
@@ -48,19 +47,18 @@ body {
 }
 
 .link1 {
-  top: -40px; /* Távolság a középpont felett */
-  left: -490px; /* Távolság a középpont bal oldalán */
+  top: -35px; /* Távolság a középpont felett */
+  left: -320px; /* Távolság a középpont bal oldalán */
 }
 
 .link1 img {
   width: 70px;
   transition: transform 0.3s;
-  
 }
 
 .link2 {
-  top: 20px; /* Távolság a középpont alatt */
-  left: 110px; /* Távolság a középpont jobb oldalán */
+  top: -35px; /* Távolság a középpont alatt */
+  right: 240px; /* Távolság a középpont jobb oldalán */
 }
 
 .link2 img {
@@ -68,8 +66,8 @@ body {
 }
 
 .link3 {
-  top: -40px; /* Távolság a középpont alatt */
-  right: 445px; /* Távolság a középpont jobb oldalán */
+  top: -12px; /* Távolság a középpont alatt */
+  right: 170px; /* Távolság a középpont jobb oldalán */
 }
 
 .link3 img {
