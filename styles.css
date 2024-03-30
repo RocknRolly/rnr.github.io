@@ -12,6 +12,7 @@ body {
   );
   background-repeat: no-repeat;
   background-attachment: fixed;
+  /* overflow: hidden; */
 }
 
 .navbar {
@@ -21,7 +22,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   position: relative;
-  width: 100%;
+  width: auto;
   height: 350px;
 }
 
@@ -54,6 +55,7 @@ body {
 .link1 img {
   width: 70px;
   transition: transform 0.3s;
+  
 }
 
 .link2 {
@@ -85,4 +87,17 @@ body {
 
 .link3 img:hover {
   transform: scale(1.3);
+}
+
+.content {
+  position: relative;
+  width: 500px;
+  height: 100px;
+  left: 80vh;
+  opacity: 0;
+  transition: opacity 3s ease;
+}
+
+.content.show {
+  opacity: 1;
 }
