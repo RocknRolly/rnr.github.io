@@ -93,7 +93,7 @@ body {
   height: 100px;
   left: 80vh;
   opacity: 0;
-  transition: opacity 3s ease;
+  transition: opacity 1s ease;
 }
 
 .content.show {
